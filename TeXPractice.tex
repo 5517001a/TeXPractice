@@ -1,0 +1,54 @@
+\documentclass[a4j]{jarticle}
+\date{}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{color}
+\usepackage{scalefnt}
+\usepackage{listings,jlisting}
+\lstset{	% ソースコード埋め込みの設定
+	basicstyle={\small},%ソースコードの文字を小さくする
+	commentstyle={\small\itshape},%コメントアウトの文字を小さくする
+	frame=single,	% 枠線は単線
+	tabsize=4,		% タブのサイズは4
+	breaklines=true	% 自動改行
+}
+\bigin{document}
+
+%表題
+\makeatletter %ここから\makeatotherまで触らなくていい
+	\def\@thesis{2019年度 東邦大学理学部情報科学科}
+	\def\id#1{\def\@id{#1}}
+	\def\department#1{\def\@department{#1}}
+	
+	\def\@maketitle{
+		\begin{center}
+			\vspace{10mm}
+			{\large \@thesis \par}	%修士論文と記載される部分
+			\vspace{50mm}
+			{\huge\bf \@title \par}	% 論文のタイトル部分
+			\vspace{15mm}
+			{\Large 学籍番号　\@id \par}	% 学籍番号部分
+			\vspace{5mm}
+			{\Large \@author \par}	% 氏名
+			\vspace{50mm}
+		\end{center}
+		\begin{flushright}
+			{\large 金岡研究室}
+		\end{flushright}
+	}
+\makeatother
+
+
+\title{Abeの\\論文練習}
+\id{5517001}
+\author{阿部　衛}
+\maketitle{\title}
+\thispagestyle{empty}
+\newpage 
+
+\section{これが章作成}
+章作成はこんな感じ
+\subsection{これが節}
+この節では、
+画像をはる、表を作成することにしてみる
