@@ -1,0 +1,15 @@
+This is pTeX, Version 3.14159265-p3.8.3 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=ptex 2020.4.7)  26 APR 2020 19:09
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**TeXPractice.tex
+(./TeXPractice.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [dvipdfmx]{jsarticle}
+? 
+! Emergency stop.
+l.1 \documentclass
+                  [dvipdfmx]{jsarticle}
+End of file on the terminal!
+
+No pages of output.
