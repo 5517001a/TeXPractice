@@ -1,7 +1,12 @@
 \documentclass[dvipdfmx]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{color}
+\usepackage{scalefnt}
+%\usepackage{listings,jlisting}
 \begin{document}
 \title{Abeの\\論文練習}
-\id{5517001}
 \author{阿部　衛}
 \maketitle{\title}
 \thispagestyle{empty}
@@ -18,7 +23,7 @@
 \begin{figure}[h]
    \begin{center}
      \caption{これが画像だ}
-     \includegraphics[scale=0.1]{FF7R_zoom.jpg}
+     \includegraphics[scale=0.5]{FF7R_zoom.jpg}
 　\end{center}
 \end{figure}
 
@@ -26,15 +31,11 @@
 
 \begin{table}[h]
  \caption{これが表作成}
- \label{table:SpeedOfLight}
  \centering
-  \begin{tabular}{clll}
-   \hline
-   要素１ & 要素２ \\
-   \hline \hline
-   sample1 & sample2  \\
-   sample3 & sample4　\\    
-　\hline
+  \begin{tabular}{|l|r|} \hline
+   要素１&要素２\\ \hline \hline
+   sample1&sample2\\
+   sample3&sample4\\ \hline
 \end{tabular}
 \end{table}
 
@@ -44,5 +45,7 @@
 \begin{thebibliography}{99}
 \item
   https://google.com 
+\item
+ http://www.latex-cmd.com
 \end{thebibliography}
 \end{document}
